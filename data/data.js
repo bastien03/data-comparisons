@@ -128,6 +128,21 @@ const jsonData = [
           {"title": "Lyon", "lat": "45.7043", "lng": "4.8422"},
           {"title": "Toulouse", "lat": "43.5466", "lng": "1.4447"},
           {"title": "Nice", "lat": "43.6381", "lng": "7.2702"},
+          {"title": "Nantes", "lat": "47.1636", "lng": "-1.5532"},
+          {"title": "Montpellier", "lat": "43.5545", "lng": "3.8768"},
+          {"title": "Strabsourg", "lat": "48.5202", "lng": "7.7522"},
+          {"title": "Bordeaux", "lat": "44.7818", "lng": "-0.5809"},
+          {"title": "Lille", "lat": "50.5867", "lng": "3.0611"},
+          {"title": "Rennes", "lat": "48.0616", "lng": "-1.2401"},
+          {"title": "Reims", "lat": "49.2104", "lng": "4.0334"},
+          {"title": "Le Havre", "lat": "49.4378", "lng": "0.0975"},
+          {"title": "Saint-Étienne", "lat": "45.3792", "lng": "4.8271"},
+          {"title": "Toulon", "lat": "43.0649", "lng": "5.9285"},
+          {"title": "Grenoble", "lat": "45.1317", "lng": "6.1647"},
+          {"title": "Dijon", "lat": "47.268", "lng": "5.0414"},
+          {"title": "Angers", "lat": "47.4207", "lng": "-0.1167"},
+          {"title": "Nîmes", "lat": "43.781", "lng": "4.3602"},
+          {"title": "Villeurbanne", "lat": "45.7119", "lng": "4.8793"},
         ]
       }
     ]
