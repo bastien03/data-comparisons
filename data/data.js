@@ -1,11 +1,11 @@
 const jsonData = [
   {
-    "countryName": "uk",
+    "countryName": "England",
     "mapCenter": {"lat": "52.561928", "lng": "-1.464854"},
     "mapZoom": 5,
     "maps": [
       {
-        "mapTitle": "2nd_division-2017_2018",
+        "mapTitle": "Football 2nd division clubs (2017/2018)",
         "items": [
           {"title": "Wolverhampton Wanderers", "lat": "52.590369", "lng": "-2.131498"},
           {"title": "Derby County", "lat": "52.915168", "lng": "-1.447200"},
@@ -34,7 +34,7 @@ const jsonData = [
         ],
       },
       {
-        "mapTitle": "3nd_division-2017_2018",
+        "mapTitle": "Football 3nd division clubs (2017/2018)",
         "items": [
           {"title": "Wigan Athletic", "lat": "53.547244", "lng": "-2.654499"},
           {"title": "Shrewsbury Town", "lat": "52.688608", "lng": "-2.748405"},
@@ -63,7 +63,7 @@ const jsonData = [
         ],
       },
       {
-        "mapTitle": "biggest_cities",
+        "mapTitle": "biggest cities",
         "items": [
           {"title": "London", "lat": "51.507222", "lng": "-0.1275"},
           {"title": "Birmingham", "lat": "52.483056", "lng": "-1.893611"},
@@ -99,12 +99,12 @@ const jsonData = [
     ]
   },
   {
-    "countryName": "germany",
+    "countryName": "Germany",
     "mapCenter": {"lat": "51.163375", "lng": "10.447683"},
     "mapZoom": 5,
     "maps": [
       {
-        "mapTitle": "biggest_cities",
+        "mapTitle": "biggest cities",
         "items": [
           {"title": "Berlin", "lat": "52.518611", "lng": "13.408333"},
           {"title": "Hamburg", "lat": "53.550556", "lng": "9.993333"},
@@ -116,12 +116,12 @@ const jsonData = [
     ]
   },
   {
-    "countryName": "france",
+    "countryName": "France",
     "mapCenter": {"lat": "46.7596", "lng": "2.4522"},
     "mapZoom": 5,
     "maps": [
       {
-        "mapTitle": "biggest_cities",
+        "mapTitle": "biggest cities",
         "items": [
           {"title": "Paris", "lat": "48.8032", "lng": "2.3511"},
           {"title": "Marseille", "lat": "43.2392", "lng": "5.3696"},
