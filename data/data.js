@@ -111,6 +111,21 @@ const jsonData = [
           {"title": "München", "lat": "48.137222", "lng": "11.575556"},
           {"title": "Köln", "lat": "50.938056", "lng": "6.956944"},
           {"title": "Frankfurt am Main", "lat": "50.110556", "lng": "8.682222"},
+          {"title": "Stuttgart", "lat": "48.775556", "lng": "9.182778"},
+          {"title": "Düsseldorf", "lat": "51.225556", "lng": "6.782778"},
+          {"title": "Dortmund", "lat": "51.514167", "lng": "7.463889"},
+          {"title": "Essen", "lat": "51.458069", "lng": "7.014761"},
+          {"title": "Leipzig", "lat": "51.340333", "lng": "12.37475"},
+          {"title": "Bremen", "lat": "53.075878", "lng": "8.807311"},
+          {"title": "Dresden", "lat": "51.049259", "lng": "13.73836"},
+          {"title": "Hannover", "lat": "52.374444", "lng": "9.738611"},
+          {"title": "Nürnberg", "lat": "49.455556", "lng": "11.078611"},
+          {"title": "Duisburg", "lat": "51.435147", "lng": "6.762692"},
+          {"title": "Bochum", "lat": "51.4825", "lng": "7.216944"},
+          {"title": "Wuppertal", "lat": "51.259167", "lng": "7.211111"},
+          {"title": "Bielefeld", "lat": "52.020417", "lng": "8.532222"},
+          {"title": "Bonn", "lat": "50.733992", "lng": "7.099814"},
+          {"title": "Münster", "lat": "51.962944", "lng": "7.628694"}
         ]
       }
     ]
