@@ -161,6 +161,31 @@ const jsonData = [
         ]
       },
       {
+        "mapTitle": "Football 1st division clubs (2017/2018)",
+        "items": [
+          {"title": "Amiens SC", "lat": "49.8907", "lng": "2.2634"},
+          {"title": "Angers SCO", "lat": "47.4571", "lng": "-0.5309"},
+          {"title": "AS Monaco", "lat": "43.7238", "lng": "7.4155"},
+          {"title": "AS Saint-Étienne", "lat": "45.4574", "lng": "4.3903"},
+          {"title": "Dijon FCO", "lat": "47.321", "lng": "5.0682"},
+          {"title": "EA Guingamp", "lat": "48.5629", "lng": "-3.1645"},
+          {"title": "ES Troyes AC", "lat": "48.3041", "lng": "4.0985"},
+          {"title": "FC Metz", "lat": "49.1066", "lng": "6.1593"},
+          {"title": "FC Nantes", "lat": "47.2522", "lng": "-1.5255"},
+          {"title": "Girondins de Bordeaux", "lat": "44.8938", "lng": "-0.5616"},
+          {"title": "Lille OSC", "lat": "50.6087", "lng": "3.1303"},
+          {"title": "Montpellier HSC", "lat": "43.6183", "lng": "3.8122"},
+          {"title": "OGC Nice", "lat": "43.7014", "lng": "7.1925"},
+          {"title": "Olympique de Marseille", "lat": "43.2662", "lng": "5.3959"},
+          {"title": "Olympique lyonnais", "lat": "45.7618", "lng": "4.9819"},
+          {"title": "Paris Saint-Germain", "lat": "48.8381", "lng": "2.253"},
+          {"title": "RC Strasbourg", "lat": "48.5567", "lng": "7.7549"},
+          {"title": "SM Caen", "lat": "49.1762", "lng": "-0.3968"},
+          {"title": "Stade rennais", "lat": "48.1042", "lng": "-1.7129"},
+          {"title": "Toulouse FC", "lat": "43.5796", "lng": "1.434"}
+        ]
+      },
+      {
         "mapTitle": "Football 2nd division clubs (2017/2018)",
         "items": [
           {"title": "Stade de Reims", "lat": "49.2435", "lng": "4.0249"},
