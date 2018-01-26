@@ -161,6 +161,31 @@ const jsonData = [
         ]
       },
       {
+        "mapTitle": "Football 2nd division clubs (2017/2018)",
+        "items": [
+          {"title": "Stade de Reims", "lat": "49.2435", "lng": "4.0249"},
+          {"title": "Nîmes Olympique", "lat": "43.8125", "lng": "4.3591"},
+          {"title": "Paris FC", "lat": "48.8152", "lng": "2.3464"},
+          {"title": "AC Ajaccio", "lat": "41.9295", "lng": "8.7772"},
+          {"title": "Havre AC", "lat": "49.4957", "lng": "0.1697"},
+          {"title": "FC Lorient", "lat": "47.7456", "lng": "-3.3691"},
+          {"title": "Stade Brestois 29", "lat": "48.3998", "lng": "-4.4617"},
+          {"title": "Clermont Foot", "lat": "45.8124", "lng": "3.1214"},
+          {"title": "Châteauroux", "lat": "46.7985", "lng": "1.7215"},
+          {"title": "FC Sochaux-Montbéliard", "lat": "47.509", "lng": "6.8113"},
+          {"title": "Gazélec FC Ajaccio", "lat": "41.9476", "lng": "8.772"},
+          {"title": "Valenciennes FC", "lat": "50.3454", "lng": "3.5322"},
+          {"title": "US Orléans", "lat": "47.837", "lng": "1.9411"},
+          {"title": "AJ Auxerre", "lat": "47.7834", "lng": "3.5885"},
+          {"title": "Chamois Niortais", "lat": "46.3136", "lng": "-0.4619"},
+          {"title": "RC Lens", "lat": "50.4296", "lng": "2.842"},
+          {"title": "AS Nancy Lorraine", "lat": "48.692", "lng": "6.2105"},
+          {"title": "FBBP 01", "lat": "46.2067", "lng": "5.237"},
+          {"title": "Quevilly Rouen Métropole", "lat": "49.4078", "lng": "1.0706"},
+          {"title": "Tours FC", "lat": "47.3727", "lng": "0.7281"}
+        ]
+      },
+      {
         "mapTitle": "Football 3nd division clubs (2017/2018)",
         "items": [
           {"title": "Rodez Aveyron Football", "lat": "44.348", "lng": "2.5635"},
