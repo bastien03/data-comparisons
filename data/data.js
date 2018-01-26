@@ -159,6 +159,28 @@ const jsonData = [
           {"title": "Nîmes", "lat": "43.836944", "lng": "4.36"},
           {"title": "Villeurbanne", "lat": "45.766111", "lng": "4.879444"},
         ]
+      },
+      {
+        "mapTitle": "Football 3nd division clubs (2017/2018)",
+        "items": [
+          {"title": "Rodez Aveyron Football", "lat": "44.348", "lng": "2.5635"},
+          {"title": "Red Star FC", "lat": "48.9025", "lng": "2.3407"},
+          {"title": "Grenoble Foot 38", "lat": "45.184", "lng": "5.7401"},
+          {"title": "SO Cholet", "lat": "47.0065", "lng": "-0.8803"},
+          {"title": "Entente Sannois Saint-Gratien", "lat": "48.9715", "lng": "2.2751"},
+          {"title": "Pau FC", "lat": "43.3061", "lng": "-0.3171"},
+          {"title": "USL Dunkerque", "lat": "51.0324", "lng": "2.3901"},
+          {"title": "Lyon Duchère AS", "lat": "45.7844", "lng": "4.7975"},
+          {"title": "FC Chambly", "lat": "49.1152", "lng": "2.2481"},
+          {"title": "US Concarneau", "lat": "47.8224", "lng": "-3.918"},
+          {"title": "Stade Lavallois", "lat": "48.0791", "lng": "-0.7549"},
+          {"title": "AS Béziers", "lat": "43.3278", "lng": "3.2249"},
+          {"title": "Marseille Consolat", "lat": "43.3709", "lng": "5.3618"},
+          {"title": "US Créteil-Lusitanos", "lat": "48.7648", "lng": "2.4615"},
+          {"title": "Les Herbiers Vendée", "lat": "46.8742", "lng": "-1.0107"},
+          {"title": "Boulogne USCO", 	"lat": "50.7205", "lng": "1.6192"},
+          {"title": "US Avranches MSM", "lat": "48.6311", "lng": "-1.3582"}
+        ]
       }
     ]
   }
