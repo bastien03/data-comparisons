@@ -12,11 +12,13 @@ html, body {
 
 .marker_group1 {
   background-color: red;
-  border: 1px solid;
+  border: 3px solid red;
   border-radius: 10px;
+  z-index: 100 !important;
 }
 .marker_group2 {
   background-color: yellow;
   border: 1px solid;
   border-radius: 10px;
+  z-index: 101 !important;
 }
