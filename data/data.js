@@ -2,7 +2,7 @@ const jsonData = [
   {
     "countryName": "England",
     "mapCenter": {"lat": "52.561928", "lng": "-1.464854"},
-    "mapZoom": 5,
+    "mapZoom": 6,
     "maps": [
       {
         "mapTitle": "Football 2nd division clubs (2017/2018)",
@@ -101,7 +101,7 @@ const jsonData = [
   {
     "countryName": "Germany",
     "mapCenter": {"lat": "51.163375", "lng": "10.447683"},
-    "mapZoom": 5,
+    "mapZoom": 6,
     "maps": [
       {
         "mapTitle": "biggest cities",
@@ -133,7 +133,7 @@ const jsonData = [
   {
     "countryName": "France",
     "mapCenter": {"lat": "46.7596", "lng": "2.4522"},
-    "mapZoom": 5,
+    "mapZoom": 6,
     "maps": [
       {
         "mapTitle": "biggest cities",
