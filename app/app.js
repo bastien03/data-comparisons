@@ -1,9 +1,11 @@
+import { jsonData, footballClubs} from '../data/data.js';
+
 let markersArray = [];
 let secondMarkersArray = [];
 let mapInstance;
 let footballClubsData;
 
-function initApp() {
+export function initApp() {
   mapInstance = L.map('map');
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -21,37 +23,63 @@ function initApp() {
 const onCountrySelected = (data, selectCountry, selectMap1, selectMap2) => () => {
   const selectedCountryCode = selectCountry.value;
   const selectedCountry = data.find(d => d.countryCode === selectedCountryCode);
-  selectMap1.innerHTML = '<option>--</option>' +
-    selectedCountry.maps.map(m => `<option value=${m.id}>${m.title}</option>`);
+  selectMap1.innerHTML = '<option>--</option>';
+  selectMap1.innerHTML += selectedCountry.maps.map(m => `<option value=${m.id}>${m.title}</option>`);
   mapInstance.setView([selectedCountry.mapCenter.lat, selectedCountry.mapCenter.lng], selectedCountry.mapZoom);
   selectMap1.onchange = onMap1Selected(data, selectedCountry, selectMap1, selectMap2);
 };
 
 const onMap1Selected = (data, selectedCountry, selectMap1, selectMap2) => () => {
-  const selectedMapId = selectMap1.value;
   deleteMarkers(secondMarkersArray);
-  selectMap2.innerHTML = '<option>--</option>';
+  const selectedMapId = selectMap1.value;
   const otherMaps = selectedCountry.maps.filter(m => m.id !== selectedMapId);
+  selectMap2.innerHTML = '<option>--</option>';
   selectMap2.innerHTML += otherMaps.map(m => `<option value=${m.id}>${m.title}</option>`);
   selectMap2.onchange = onMap2Selected(data, selectedCountry, selectMap2);
-  const mapMarkers = getMapItems(selectedCountry, selectedMapId);
+  const result = getMapItems(selectedCountry, selectedMapId);
   deleteMarkers(markersArray);
-  markersArray = renderMarkers(mapMarkers, 'marker_group1');
+  markersArray = renderMarkers(result.items, 'marker_group1');
+  handleMissingItems(result.missingItems);
 };
 
 const onMap2Selected = (data, selectedCountry, selectMap2) => () => {
   const selectedMapId = selectMap2.value;
-  const mapMarkers = getMapItems(selectedCountry, selectedMapId);
+  const result = getMapItems(selectedCountry, selectedMapId);
   deleteMarkers(secondMarkersArray);
-  secondMarkersArray = renderMarkers(mapMarkers, 'marker_group2');
+  secondMarkersArray = renderMarkers(result.items, 'marker_group2');
+  handleMissingItems(result.missingItems);
 };
 
 const getMapItems = (selectedCountry, selectedMapId) => {
+  const missingItems = [];
   const selectedMap = selectedCountry.maps.find(m => m.id === selectedMapId);
-  if (selectedMap.category !== 'FOOTBALL' || selectedCountry.countryCode !== 'fr') {
-    return selectedMap.items;
+  if (selectedMap.category !== 'FOOTBALL' || selectedCountry.countryCode !== 'FR') {
+    return {
+      items: selectedMap.items,
+      missingItems
+    };
   }
-  return selectedMap.items.map(i => footballClubsData[selectedCountry.countryCode][i]);
+  const items = [];
+  selectedMap.items.forEach(itemCode => {
+    const item = footballClubsData[selectedCountry.countryCode][itemCode];
+    if (!!item) {
+      items.push(item);
+    } else {
+      missingItems.push(itemCode);
+    }
+  });
+
+  return {
+    items,
+    missingItems
+  };
+}
+
+const handleMissingItems = (missingItems) => {
+  if (missingItems.length !== 0) {
+    const selectMap1 = document.getElementsByClassName('message')[0];
+    selectMap1.innerHTML = `Following items could not be found: ${missingItems}`;
+  }
 }
 
 const renderMarkers = (items, className) => {
@@ -62,7 +90,7 @@ const renderMarkers = (items, className) => {
     const marker = L.marker([item.lat, item.lng],
       {
         icon: markerIcon,
-        title: item.title
+        title: item.name
       });
     marker.addTo(mapInstance);
     return marker;
@@ -76,3 +104,5 @@ function deleteMarkers(array) {
   }
   array = [];
 }
+
+initApp();
