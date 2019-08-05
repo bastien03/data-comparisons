@@ -5,7 +5,7 @@ let secondMarkersArray = [];
 let mapInstance;
 let footballClubsData;
 
-export function initApp() {
+function initApp() {
   mapInstance = L.map('map');
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
