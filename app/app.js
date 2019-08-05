@@ -53,7 +53,7 @@ const onMap2Selected = (data, selectedCountry, selectMap2) => () => {
 const getMapItems = (selectedCountry, selectedMapId) => {
   const missingItems = [];
   const selectedMap = selectedCountry.maps.find(m => m.id === selectedMapId);
-  if (selectedMap.category !== 'FOOTBALL' || selectedCountry.countryCode !== 'FR') {
+  if (selectedMap.category !== 'FOOTBALL') {
     return {
       items: selectedMap.items,
       missingItems
